@@ -1,5 +1,4 @@
 <template>
-  <Header />
   <div>
     <h2>Home page</h2>
     <p>
@@ -22,13 +21,7 @@
   </div>
 </template>
 
-<script setup>
-import Header from "~/components/layouts/Header.vue";
-
-components: {
-  Header;
-}
-</script>
+<script setup></script>
 
 <style lang="scss">
 * {
