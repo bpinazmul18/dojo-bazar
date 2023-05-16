@@ -20,20 +20,3 @@
     </p>
   </div>
 </template>
-
-<style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background-color: blanchedalmond;
-}
-
-h2,
-p {
-  color: #000;
-  margin-bottom: 2rem;
-}
-</style>
