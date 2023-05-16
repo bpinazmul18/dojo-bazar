@@ -1,8 +1,19 @@
 <template>
   <NuxtLink
     to="/"
-    class="font-semibold text-lg text-emerald-500 leading-6 tracking-wider"
+    :class="`font-semibold text-lg ${color} leading-6 tracking-wider`"
   >
     DOJO Bazar
   </NuxtLink>
 </template>
+
+<script>
+export default {
+  props: {
+    color: {
+      type: String,
+      default: "text-emerald-500"
+    }
+  }
+};
+</script>
