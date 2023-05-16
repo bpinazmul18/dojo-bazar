@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <main>
+  <main class="container mx-auto px-4">
     <slot />
   </main>
   <Footer />
@@ -17,5 +17,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped></style>
