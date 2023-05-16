@@ -1,8 +1,7 @@
 <template>
   <header class="shadow-sm bg-white">
     <nav class="container mx-auto p-4 flex items-center justify-between">
-      <NuxtLink to="/"> DOJO Bazar </NuxtLink>
-
+      <BrandLogo />
       <ul class="flex items-center justify-between gap-6">
         <li>
           <NuxtLink
@@ -29,3 +28,13 @@
     </nav>
   </header>
 </template>
+
+<script>
+import BrandLogo from "~/components/BrandLogo.vue";
+
+export default {
+  components: {
+    BrandLogo
+  }
+};
+</script>

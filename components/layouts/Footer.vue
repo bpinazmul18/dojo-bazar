@@ -26,7 +26,7 @@
             <div
               class="flex items-center justify-between gap-6 border-b border-white dark:border-gray-800 py-6 md:block md:space-y-6 md:border-none md:py-0"
             >
-              <NuxtLink to="/"> DOJO Bazar </NuxtLink>
+              <BrandLogo />
 
               <div class="flex gap-6">
                 <a
@@ -194,3 +194,13 @@
     </div>
   </footer>
 </template>
+
+<script>
+import BrandLogo from "~/components/BrandLogo.vue";
+
+export default {
+  components: {
+    BrandLogo
+  }
+};
+</script>
