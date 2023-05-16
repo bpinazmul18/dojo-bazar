@@ -1,7 +1,8 @@
 <template>
   <Header />
-  <div>From Products layouts</div>
-  <main>
+  <main class="container mx-auto px-4">
+    <div>From Products layouts</div>
+
     <slot />
   </main>
   <Footer />
