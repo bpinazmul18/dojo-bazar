@@ -16,5 +16,9 @@ definePageMeta({
 });
 
 const { data: products} = await useFetch(`${runtimeConfig.public.apiBase}/products`)
-console.log({ products })
+
+useHead({
+  title: 'Dojo Bazar | Products'
+})
+
 </script>

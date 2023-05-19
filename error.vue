@@ -180,7 +180,7 @@
                         </svg>
 
                     </div>
-                        <p class="text-sm md:text-base text-yellow-300 p-2 mb-4">The stuff you were looking for doesn't exist
+                        <p class="text-sm md:text-base text-yellow-300 p-2 mb-4">{{ error.message }}
                     </p>
                     <button class="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-white rounded shadow hover:shadow-lg py-2 px-8 border border-yellow-300 hover:border-transparent" @click="$router.back()">Back</button>
                 </div>
@@ -190,6 +190,7 @@
 </template>
 
 <script setup>
+defineProps(['error'])
 
 </script>
 
