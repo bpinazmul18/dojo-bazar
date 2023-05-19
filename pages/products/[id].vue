@@ -1,17 +1,22 @@
 <template>
   <div>
-    <h2>Product details for {{ id }}</h2>
+    <h2>{{  product.title }}</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, eaque
-      quod! Quibusdam quo veritatis vitae voluptas at? Nihil, natus aliquam.
+      {{  product.description }}
     </p>
   </div>
 </template>
 
 <script setup>
+const runtimeConfig = useRuntimeConfig();
+
 definePageMeta({
   layout: "products"
 });
 
 const { id } = useRoute().params;
+
+
+const { data: product} = await useFetch(`${runtimeConfig.public.apiBase}/products/${id}`)
+console.log({ product })
 </script>
