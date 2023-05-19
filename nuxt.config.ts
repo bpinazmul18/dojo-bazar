@@ -9,5 +9,16 @@ export default defineNuxtConfig({
           apiBase: process.env.API_BASE || "default_api_url",
           otherUrl: process.env.OTHER_URL || "default_other_url"
         }
+    },
+    app: {
+      head: {
+        title: 'Dojo Bazar',
+        meta: [
+          { name: 'description', content: 'Buy various thing...'}
+        ],
+        link: [
+          { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'}
+        ]
+      }
     }
 });
