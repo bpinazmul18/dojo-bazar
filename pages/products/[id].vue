@@ -1,9 +1,6 @@
 <template>
   <div>
-    <h2>{{  product.title }}</h2>
-    <p>
-      {{  product.description }}
-    </p>
+    <ProductDetails :product="product"/>
   </div>
 </template>
 
@@ -18,5 +15,4 @@ const { id } = useRoute().params;
 
 
 const { data: product} = await useFetch(`${runtimeConfig.public.apiBase}/products/${id}`)
-console.log({ product })
 </script>
